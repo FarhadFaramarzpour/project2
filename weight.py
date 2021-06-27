@@ -13,13 +13,14 @@ height = float(input('pls enter your height? (cm) '))
 height1 = height - 100
 if height1 < weight_kg:
     print('its better to loos weight')
-    answer = input('Do you go to gym every day? (yes/no) ')
-    if answer == "yes":
-        print('well done, keep going')
-    if answer == "no":
-        print('its time to sport')
-    A = sport(answer)
-    while A < 1:
-        print("oops! answer is incorrect, run again")
+    answer = ''
+    while answer != 'yes' and answer != 'no':
+        answer = input('Do you go to gym every day? (yes/no) ')
+        if answer == "yes":
+            print('well done, keep going')
+        if answer == "no":
+            print('its time to sport')
+        if answer != 'yes' and answer != 'no':
+            print("oops! answer is incorrect, run again")
 else:
     print('you are fit!!!')
