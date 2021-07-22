@@ -1,10 +1,3 @@
-def sport(a):
-    if a == 'yes' or 'no':
-        return 1
-    else:
-        return 0
-
-
 name = input('Pls enter your name? ')
 weight_kg = float(input('pls enter yours weight? (Kg) '))
 weight_lb = str(weight_kg * 2.20462262)
